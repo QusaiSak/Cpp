@@ -256,20 +256,12 @@ int intersection(node* &head1, node* &head2){
 
 int main(){
     node* head1 = NULL;
-    node* head2 = NULL;
-    int arr[]={1,2,3,4,5,6};
+    int arr[]={1,2,3,4,5};
     int n = sizeof(arr) / sizeof(arr[0]);
     for(int i=0; i<n; i++){
         insertAtTail(head1, arr[i]);
     }
-    int arr1[]={9,10};
-    int n1 = sizeof(arr1) / sizeof(arr1[0]);
-    for(int i=0; i<n1; i++){
-        insertAtTail(head2, arr1[i]);
-    }
-    intersect(head1, head2, 5);
+    kreverse(head1,3);
     display(head1);
-    display(head2);
-    cout<<intersection(head1, head2)<<endl;
     return 0 ;
 }
